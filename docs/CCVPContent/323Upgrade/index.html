@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://www.MySite.local/CCVPContent/IntArch/">
+        <link rel="canonical" href="https://www.MySite.local/CCVPContent/323Upgrade/">
       
       
-        <link rel="prev" href="../IntLimits/">
+        <link rel="prev" href="../GeneralIssues/">
       
       
-        <link rel="next" href="../PreReqs/">
+        <link rel="next" href="../IgnoreEvents/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Integration architecture options - CCure Video Push Docs Site</title>
+        <title>Upgrading with certificates to version 3.2.3 - CCure Video Push Docs Site</title>
       
     
     
@@ -93,7 +93,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#integration-architecture-options" class="md-skip">
+        <a href="#upgrading-with-certificates-to-version-323" class="md-skip">
           Skip to content
         </a>
       
@@ -128,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Integration architecture options
+              Upgrading with certificates to version 3.2.3
             
           </span>
         </div>
@@ -294,19 +294,17 @@
       
   
   
-    
-  
   
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
@@ -325,7 +323,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -522,18 +520,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../IntArch/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -548,7 +537,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1368,17 +1356,19 @@
       
   
   
+    
+  
   
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
@@ -1397,7 +1387,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1542,9 +1532,35 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../323Upgrade/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    
+  
+    Upgrading with certificates to version 3.2.3
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1559,6 +1575,37 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#which-ccure-machines-should-have-certificates-installed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Which CCure machines should have certificates installed?
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1720,14 +1767,43 @@
   
 
 
-<h1 id="integration-architecture-options">Integration architecture options<a class="headerlink" href="#integration-architecture-options" title="Permanent link">&para;</a></h1>
-<p>Single system installations, where Milestone XProtect consists of a single Management Server and a single Recording Server, and the CCure 9000 system consists of a single CCure 9000 Server should have an architecture similar to the diagram below.</p>
-<p><img alt="One to One Architecture" src="../img/one2one.png" /></p>
-<p>As systems scale in size, the two most important components in this integration are CCure 9000 workstations, and Milestone XProtect Recording Servers. For each CCure 9000 workstation added to the system, it will need all three of the components listed above, the certificate, the integration client components and the MIPSDK X86 Redistibutable. You must configure each Milestone XProtect Recording Server individually.</p>
-<p><img alt="Scalable Architecture" src="../img/scaling121.png" /></p>
-<p>Scaling the number of cameras and Recording Servers can also include adding more Management Servers and Event Servers. This is also explained in the <a href="../ConfigRecSrvCon/">Configure the Recording Server connection</a> section. The primary complication in this particular scenario is the requirement for a specific certificate on each CCure 9000 workstation that matches each individual XProtect VMS system.</p>
-<p><img alt="Scalable XProtect Architecture" src="../img/one2NXProtect.png" /></p>
-<p>Many other architectural options are available. Please consult Milestone Systems if your desired option is not listed.</p>
+<h1 id="upgrading-with-certificates-to-version-323">Upgrading with certificates to version 3.2.3<a class="headerlink" href="#upgrading-with-certificates-to-version-323" title="Permanent link">&para;</a></h1>
+<p>After upgrading the Video Push integration software to the latest version (3.2.3) error messages can appear if the system is using certificate based encryption for authentication with the XProtect Management Server.</p>
+<p><img alt="Connection failed error message" src="../img/CP.TS323Upgrade1.png" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Everything was working!</p>
+<p>Systems which were integrated on an older version and were already using certificates should skip steps three and four in the list below.</p>
+</div>
+<p><strong><em>What has changed?</em></strong></p>
+<p>The latest version of the integration (3.2.3) now supports more authentication methods, ports, and encryption options. Older versions of the integration only support using port 80 for all authentication methods. </p>
+<p><strong><em>How to fix it?</em></strong></p>
+<p>Follow the steps listed below to upgrade an existing system to version 3.2.3 with certificates and HTTPS secure communications.</p>
+<ol>
+<li>Upgrade the Video Push integration software components to version 3.2.3. <a href="../InstallProcess/">Installation process (explained)</a>.</li>
+<li>Existing XProtect Recording Servers will continue working.</li>
+<li>Verify XProtect is using secure communications. <a href="https://doc.milestonesys.com/latest/en-US/system/security/certificates/sg_creatinganddistributingmanually.htm?tocpath=Cybersecurity%20and%20compliance%7CXProtect%20VMS%20certificates%20guide%7C_certificates_%7C_____6">Installing and distributing certificates manually</a>.</li>
+<li>Install the <a href="./#which-ccure-machines-should-have-certificates-installed">required client certificates</a> on the CCure host machines as needed.</li>
+<li>In the CCure Administration Station application, select a Milestone Recording Server and click the <strong>Edit</strong> button.</li>
+<li>Click <strong>OK</strong>.<blockquote>
+<p><img alt="Server Info" src="../img/CP.TS323Upgrade2.png" /></p>
+</blockquote>
+</li>
+<li>Update the Recording Server Server info properties. Select the <strong>Use Https</strong> option.</li>
+<li>Click <strong>Connect</strong>.</li>
+<li>Open the Recording Server list below the Connect button and select a Recording Server. Verify the newly edited Recording Server is online.</li>
+<li>Save and close.</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Reboot the CCure system</p>
+<p>It is recommended to restart the CrossFire Framework Service &amp; CrossFire Server Component Framework Service after the integration software components have been upgraded. The installation wizard should show the following dialog if a full system reboot is required.</p>
+<blockquote>
+<p><img alt="Upgrade Notification" src="../img/CP.TS323Upgrade3.png" />
+</p>
+</blockquote>
+</div>
+<hr />
+<h2 id="which-ccure-machines-should-have-certificates-installed">Which CCure machines should have certificates installed?<a class="headerlink" href="#which-ccure-machines-should-have-certificates-installed" title="Permanent link">&para;</a></h2>
+<p>Client certificates should be installed on any CCure host which requires an authenticated connection to XProtect, or encrypted XProtect video streams. This includes all CCure workstations, and the CCure 9000 database server.</p>
 
 
 
