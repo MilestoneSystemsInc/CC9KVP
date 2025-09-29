@@ -27,7 +27,7 @@
     
     
       
-        <title>Upgrading with certificates to version 3.2.3 - CCure Video Push Docs Site</title>
+        <title>Upgrading with certificates to version 3.2.3 or higher - CCure Video Push Docs Site</title>
       
     
     
@@ -93,7 +93,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#upgrading-with-certificates-to-version-323" class="md-skip">
+        <a href="#upgrading-with-certificates-to-version-323-or-higher" class="md-skip">
           Skip to content
         </a>
       
@@ -128,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Upgrading with certificates to version 3.2.3
+              Upgrading with certificates to version 3.2.3 or higher
             
           </span>
         </div>
@@ -1594,7 +1594,7 @@
   <span class="md-ellipsis">
     
   
-    Upgrading with certificates to version 3.2.3
+    Upgrading with certificates to version 3.2.3 or higher
   
 
     
@@ -1611,7 +1611,7 @@
   <span class="md-ellipsis">
     
   
-    Upgrading with certificates to version 3.2.3
+    Upgrading with certificates to version 3.2.3 or higher
   
 
     
@@ -1818,19 +1818,19 @@
   
 
 
-<h1 id="upgrading-with-certificates-to-version-323">Upgrading with certificates to version 3.2.3<a class="headerlink" href="#upgrading-with-certificates-to-version-323" title="Permanent link">&para;</a></h1>
-<p>After upgrading the Video Push integration software to the latest version (3.2.3) error messages can appear if the system is using certificate based encryption for authentication with the XProtect Management Server.</p>
+<h1 id="upgrading-with-certificates-to-version-323-or-higher">Upgrading with certificates to version 3.2.3 or higher<a class="headerlink" href="#upgrading-with-certificates-to-version-323-or-higher" title="Permanent link">&para;</a></h1>
+<p>After upgrading the Video Push integration software to the 3.2.3 version (or higher) error messages can appear if the system is using certificate based encryption for authentication with the XProtect Management Server.</p>
 <p><img alt="Connection failed error message" src="../img/CP.TS323Upgrade1.png" /></p>
 <div class="admonition warning">
 <p class="admonition-title">Everything was working!</p>
 <p>Systems which were integrated on an older version and were already using certificates should skip steps three and four in the list below.</p>
 </div>
 <p><strong><em>What has changed?</em></strong></p>
-<p>The latest version of the integration (3.2.3) now supports more authentication methods, ports, and encryption options. Older versions of the integration only support using port 80 for all authentication methods. </p>
+<p>The 3.2.3 and newer versions of the integration now support more authentication methods, ports, and encryption options. Older versions of the integration only support using port 80 for all authentication methods. </p>
 <p><strong><em>How to fix it?</em></strong></p>
 <p>Follow the steps listed below to upgrade an existing system to version 3.2.3 with certificates and HTTPS secure communications.</p>
 <ol>
-<li>Upgrade the Video Push integration software components to version 3.2.3. <a href="../InstallProcess/">Installation process (explained)</a>.</li>
+<li>Upgrade the Video Push integration software components to version 3.2.3 or higher. <a href="../InstallProcess/">Installation process (explained)</a>.</li>
 <li>Existing XProtect Recording Servers will continue working.</li>
 <li>Verify XProtect is using secure communications. <a href="https://doc.milestonesys.com/latest/en-US/system/security/certificates/sg_creatinganddistributingmanually.htm?tocpath=Cybersecurity%20and%20compliance%7CXProtect%20VMS%20certificates%20guide%7C_certificates_%7C_____6">Installing and distributing certificates manually</a>.</li>
 <li>Install the <a href="./#which-ccure-machines-should-have-certificates-installed">required client certificates</a> on the CCure host machines as needed.</li>
